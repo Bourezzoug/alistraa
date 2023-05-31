@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-behavior: smooth;
+}
+/* Burger */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all .25s;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    /* background-color: #000; */
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* .hero-img::after{
+    content:'';
+    position: absolute;
+    top:-200px;
+    right:-180px;
+    top:0;
+    right:0;
+   width:800px;
+    height:800px;
+    border-bottom-left-radius:50% ;
+    border-bottom-right-radius:50% ;
+    background-color: #4E6BFF;
+    z-index:-1;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+} */
+.animation{
+    animation: ud-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ud-ping{
+  
+    75%, 100%{
+      transform: scale(2);
+      opacity: 0;
+    }
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  @keyframes ud-rotating{
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    0%, 100%{
+      transform: rotate(360deg);
+    }
+  
+    50%{
+      transform: rotate(0deg);
+    }
   }
-  to {
-    transform: rotate(360deg);
+  .rotate-animation{
+    animation: ud-rotating 30s linear infinite;
   }
-}
