@@ -1,4 +1,5 @@
 import React from 'react';
+import 'aos/dist/aos.css';
 const HeroSection = () => {
     return (
         <>
@@ -9,11 +10,11 @@ const HeroSection = () => {
       <img src="images/shape-02.svg" alt="shape" class="hidden 2xl:block absolute right-[20%] bottom-0  z-[10]" />
       <img src="images/shape-03.svg" alt="shape" class="hidden 2xl:block absolute left-[15%] bottom-[10%] z-[10]" />
       <img src="images/shape-04.svg" alt="shape" class="absolute right-0 top-0" />
-      <img src="images/hero.png" alt="Woman" class="absolute right-0 top-0 z-[1] hidden md:block" />
+      <img src="images/hero.png" alt="Woman" class="absolute right-0 top-0 z-[1] hidden md:block" data-aos="zoom-in" data-aos-offset="300"  data-aos-duration="500" />
     </div>
 
     {/* <!-- Hero Content --> */}
-    <div class="mx-auto max-w-[86.875rem] px-4 md:px-8 2xl:px-0">
+    <div class="mx-auto max-w-[86.875rem] px-4 md:px-8 2xl:px-0" data-aos="fade-right" data-aos-offset="300"  data-aos-duration="500">
       <div class="flex items-center justify-center md:justify-normal">
         <div class="animate_left w-full md:w-1/2">
           <h1 class="font-semibold text-[1.875rem]  lg:text-9 lg:leading-10 xl:text-[50px] xl:leading-[55px] text-heading text-header-color mb-6 dark:text-white">Transformez votre présence en ligne avec notre agence de marketing digital.</h1>
@@ -35,9 +36,9 @@ const HeroSection = () => {
   <section id="features" class="dark:bg-gray-900">
     <div class="container mx-auto p-6">
         <div class="grid grid-cols-12 gap-10">
-            <div class="col-span-12 md:col-span-6 lg:col-span-4 w-1/2 md:w-full">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 w-1/2 md:w-full" data-aos="fade-right" data-aos-offset="50"  data-aos-duration="500">
                 <div class="flex flex-col md:flex-row lg:space-x-5">
-                    <div class="col-span-1">
+                    <div class="col-span-1" >
                         <div class="bg-[#f36A8D]  rounded-full py-2 px-1 h-[80px] w-[80px] flex items-center justify-center">
                         <img src="images/icon-01.svg" alt="Icon" />
                         </div>
@@ -48,7 +49,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 md:col-span-6 lg:col-span-4 w-1/2 md:w-full">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 w-1/2 md:w-full" data-aos="zoom-in" data-aos-offset="50"  data-aos-duration="500">
                 <div class="flex flex-col md:flex-row lg:space-x-5">
                     <div class="col-span-1">
                         <div class="bg-[#20CA66]  rounded-full py-2 px-1 h-[80px] w-[80px] flex items-center justify-center">
@@ -61,7 +62,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 md:col-span-6 lg:col-span-4 w-1/2 md:w-full">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 w-1/2 md:w-full" data-aos="fade-left" data-aos-offset="50"  data-aos-duration="500">
                 <div class="flex flex-col md:flex-row lg:space-x-5">
                     <div class="col-span-1">
                         <div class="bg-[#FA9161]  rounded-full py-2 px-1 h-[80px] w-[80px] flex items-center justify-center">

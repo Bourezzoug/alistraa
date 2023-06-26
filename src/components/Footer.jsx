@@ -1,7 +1,8 @@
 import React from 'react';
+import AOS from 'aos';
 const Footer = () =>  {
    return (
-    <footer class="relative bg-white pt-8 pb-6 dark:bg-gray-900">
+    <footer class="relative bg-white pt-8 pb-6 dark:bg-gray-900" data-aos="zoom-in" data-aos-offset="300"  data-aos-duration="500">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-left lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
@@ -10,12 +11,26 @@ const Footer = () =>  {
             Find us on any of these platforms, we respond 1-2 business days.
           </h5>
           <div class="mt-6 lg:mb-0 mb-6">
-            <button class="bg-white dark:bg-gray-800 dark:text-p-color text-[#d62976] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <i class="fab fa-instagram"></i></button><button class="bg-white dark:bg-gray-800 dark:text-p-color text-[#3b5998] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <i class="fab fa-facebook-square"></i></button><button class="bg-white dark:bg-gray-800 dark:text-p-color text-[#0e76a8] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <i class="fab fa-linkedin"></i></button><button class="bg-white dark:bg-gray-800 dark:text-p-color shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-              <i class="fab fa-github"></i>
-            </button>
+            <a href="https://www.instagram.com/alistraa_agency/" target='_blank'>
+              <button class="bg-white dark:bg-gray-800 dark:text-p-color text-[#d62976] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-instagram"></i>
+              </button>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=100090961210924" target='_blank'>
+              <button class="bg-white dark:bg-gray-800 dark:text-p-color text-[#3b5998] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-facebook-square"></i>
+              </button>
+            </a>
+
+            <a href="https://www.linkedin.com/company/agencealistraa2023/about/" target='_blank'>
+              <button class="bg-white dark:bg-gray-800 dark:text-p-color text-[#0e76a8] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <i class="fab fa-linkedin"></i>
+              </button>
+            </a>
+
+              {/* <button class="bg-white dark:bg-gray-800 dark:text-p-color shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button"> */}
+              {/* <i class="fab fa-github"></i> */}
+            {/* </button> */}
           </div>
         </div>
         <div class="w-full lg:w-6/12 px-4">

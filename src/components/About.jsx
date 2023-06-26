@@ -1,4 +1,6 @@
 import React from 'react';
+import 'aos/dist/aos.css';
+
 const   About =() =>  {
    return (
 <section id="about" class="py-10 dark:bg-gray-900">
@@ -6,7 +8,7 @@ const   About =() =>  {
         <div class="mx-auto max-w-[86.875rem] px-8 wq">
             <div class="flex flex-col md:flex-row items-center gap-8 lg:gap-[7.5rem]">
               {/* <!-- About Images --> */}
-              <div class="animate_left xc flex gap-8 w-full md:w-1/2 relative">
+              <div class="flex gap-8 w-full md:w-1/2 relative" data-aos="fade-right" data-aos-offset="300"  data-aos-duration="500">
                 <div>
                   <img src="images/shape-05.svg" alt="Shape" class="absolute -left-5 top-5" />
                   <img src="images/about-01.png" alt="About" class="mb-8" />
@@ -20,7 +22,7 @@ const   About =() =>  {
               </div>
     
               {/* <!-- About Content --> */}
-              <div class="animate_right w-full md:w-1/2">
+              <div class=" w-full md:w-1/2" data-aos="fade-left" data-aos-offset="300"  data-aos-duration="500">
                 <h4 class="font-[500] text-[1.25rem] leading-5  text-main-color mb-5">Pourquoi nous choisir?</h4>
                 <h2 class="font-[600] text-[1.875rem] leading-9  zp pr text-heading-color wm mb-[1.875rem] dark:text-white">Nous rendons nos clients heureux en offrant les meilleurs services</h2>
                 {/* {{-- <p class="w-[95%] text-p-color">Notre agence se démarque par notre approche personnalisée, notre expertise de pointe et notre engagement à fournir des résultats exceptionnels à chaque projet.</p> --}} */}
