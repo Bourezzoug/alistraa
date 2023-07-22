@@ -24,24 +24,24 @@ const Header = () =>  {
     };
 
   return (
-    <header class="dark:bg-gray-900 shadow bg-white relative ">
-    <nav class="relative  z-20 bg-white dark:bg-gray-900">
-        <div class="container mx-auto p-6">
+    <header className="dark:bg-gray-900 shadow bg-white relative ">
+    <nav className="relative  z-20 bg-white dark:bg-gray-900">
+        <div className="container mx-auto p-6">
         {/* <!-- Flex Container --> */}
-        <div class="flex items-center justify-between">
+        <div className="flex items-center justify-between">
             {/* <!-- Logo --> */}
-            <div class="pt-2">
-                <img src="images/logo.svg" class="block dark:hidden w-32 h-6" alt="" />
-                <img src="images/logo-dark.svg" class="hidden dark:block w-32 h-6" alt="" />
+            <div className="pt-2">
+                <img src="images/logo.svg" className="block dark:hidden w-32 h-6" alt="" />
+                <img src="images/logo-dark.svg" className="hidden dark:block w-32 h-6" alt="" />
             </div>
             {/* <!-- Menu Item --> */}
-            <div class="hidden md:flex space-x-6">
-                <a href="#hero" class="text-header-color dark:text-white hover:text-main-color transition-colors">Home</a>
-                <a href="#about" class="text-header-color dark:text-white hover:text-main-color transition-colors">À propos</a>
-                <a href="#services" class="text-header-color dark:text-white hover:text-main-color transition-colors">Services</a>
-                <a href="#services" class="text-header-color dark:text-white hover:text-main-color transition-colors">Teams</a>
-                <a href="#" class="text-header-color dark:text-white hover:text-main-color transition-colors">Témoignage</a>
-                <a href="#contact" class="text-header-color dark:text-white hover:text-main-color transition-colors">Contact</a>
+            <div className="hidden md:flex space-x-6">
+                <a href="#hero" className="text-header-color dark:text-white hover:text-main-color transition-colors">Home</a>
+                <a href="#about" className="text-header-color dark:text-white hover:text-main-color transition-colors">À propos</a>
+                <a href="#services" className="text-header-color dark:text-white hover:text-main-color transition-colors">Services</a>
+                <a href="#services" className="text-header-color dark:text-white hover:text-main-color transition-colors">Teams</a>
+                <a href="#" className="text-header-color dark:text-white hover:text-main-color transition-colors">Témoignage</a>
+                <a href="#contact" className="text-header-color dark:text-white hover:text-main-color transition-colors">Contact</a>
             </div>
             {/* <!-- Button --> */}
             <button
@@ -72,13 +72,13 @@ const Header = () =>  {
     </button>
         </div>
         {/* <!-- Mobile Menu --> */}
-        <div class={`md:hidden`}>
-            <div id="menu" class={`absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white dark:bg-gray-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md ${isOpen ? 'flex' : 'hidden'}`}>
-                <a href="#" class="text-header-color hover:text-main-color transition-colors">Home</a>
-                <a href="#about" class="text-header-color hover:text-main-color transition-colors">À propos</a>
-                <a href="#services" class="text-header-color hover:text-main-color transition-colors">Services</a>
-                <a href="#" class="text-header-color hover:text-main-color transition-colors">Teams</a>
-                <a href="#contact" class="text-header-color hover:text-main-color transition-colors">Contact</a>
+        <div className={`md:hidden`}>
+            <div id="menu" className={`absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white dark:bg-gray-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md ${isOpen ? 'flex' : 'hidden'}`}>
+                <a href="#" className="text-header-color hover:text-main-color transition-colors">Home</a>
+                <a href="#about" className="text-header-color hover:text-main-color transition-colors">À propos</a>
+                <a href="#services" className="text-header-color hover:text-main-color transition-colors">Services</a>
+                <a href="#" className="text-header-color hover:text-main-color transition-colors">Teams</a>
+                <a href="#contact" className="text-header-color hover:text-main-color transition-colors">Contact</a>
             </div>
         </div>
     </div>
